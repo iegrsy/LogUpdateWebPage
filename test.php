@@ -22,25 +22,8 @@ function now($str_user_timezone,
 
 	return $str_server_now;
 }
-# test get url
-# ?time=23:19:08&date=22.01.2018&V1=233,7&I1=0,00&P1=0&V2=233,2&I2=0&P2=0&V3=227,8&I3=0,00&P3=0
-#if ($_GET["time"] || $_GET["date"] || $_GET["V1"] || $_GET["I1"] || $_GET["P1"] || $_GET["V2"] || $_GET["I2"] || $_GET["P2"] || $_GET["V3"] || $_GET["I3"] || $_GET["P3"]) {
-#	# code...
-#	$arr = array(
-#		'time' => $_GET["time"],
-#		'date' => $_GET["date"],
-#		'V1' => $_GET["V1"],
-#		'I1' => $_GET["I1"],
-#		'P1' => $_GET["P1"],
-#		'V2' => $_GET["V2"],
-#		'I2' => $_GET["I2"],
-#		'P2' => $_GET["P2"],
-#		'V3' => $_GET["V3"],
-#		'I3' => $_GET["I3"],
-#		'P3' => $_GET["P3"]
-#		);
 
-if ($_GET["ea"] || $_GET["ee"] || $_GET["ke"] || $_GET["iea"] || $_GET["iee"] || $_GET["iek"]){
+if ($_GET["ea"] || $_GET["ee"] || $_GET["ek"] || $_GET["iea"] || $_GET["iee"] || $_GET["iek"]){
 	$arr = array(
 		'ea' => $_GET["ea"],
 		'ee' => $_GET["ee"],
@@ -79,10 +62,27 @@ $sec = "3";
 <body>
 	<?php
 	echo "Watch the page reload itself in 3 second! </br></br></br></br>";
-	$json = file_get_contents('./test.json');
-	$obj = json_decode($json, true);
-	print_r($obj);
 	?>
 
+	<table style="width:60%" border="1">
+		<tr>
+			<th>Comment</th>
+			<th>index</th> 
+		</tr>
+
+		<?php 
+		$json = file_get_contents('./test.json');
+		$obj = json_decode($json, true);
+		print_r($obj);
+
+		foreach($obj as $row) {
+			foreach($row as $key => $val) {
+				// echo $key . ': ' . $val;
+				// echo '<br>';
+				echo "<tr><td>" . $key . "</td><td>" . $val . "</td></tr>";
+			}
+		}
+		?>
+	</table>
 </body>
 </html>

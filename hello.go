@@ -39,19 +39,19 @@ func readLine(path string) {
 
 	ea := strings.Split(s[0], ":")
 	ee := strings.Split(s[1], ":")
-	ke := strings.Split(s[2], ":")
+	ek := strings.Split(s[2], ":")
 	iea := strings.Split(s[3], ":")
 	iee := strings.Split(s[4], ":")
 	iek := strings.Split(s[5], ":")
 
 	fmt.Println(" 1: "+ ea[1])
 	fmt.Println(" 1: "+ ee[1])
-	fmt.Println(" 1: "+ ke[1])
+	fmt.Println(" 1: "+ ek[1])
 	fmt.Println(" 1: "+ iea[1])
 	fmt.Println(" 1: "+ iee[1])
 	fmt.Println(" 1: "+ iek[1])
 
-	var murl string = HOST + "?" + "ea=" + strings.TrimSpace(ea[1]) + "&ee=" + strings.TrimSpace(ee[1]) + "&ke=" + strings.TrimSpace(ke[1]) + "&iea=" + strings.TrimSpace(iea[1]) + "&iee=" + strings.TrimSpace(iee[1]) + "&iek=" + strings.TrimSpace(iek[1])
+	var murl string = HOST + "?" + "ea=" + strings.TrimSpace(ea[1]) + "&ee=" + strings.TrimSpace(ee[1]) + "&ek=" + strings.TrimSpace(ek[1]) + "&iea=" + strings.TrimSpace(iea[1]) + "&iee=" + strings.TrimSpace(iee[1]) + "&iek=" + strings.TrimSpace(iek[1])
 	fmt.Println(murl)
 	a, _ := http.Get(murl)
 	fmt.Println(a)
