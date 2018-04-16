@@ -17,4 +17,4 @@ ae:  58,ee:  39,ke:  10,iea:   0,iee:   0,iek:   0
 ae:  58,ee:  39,ke:  10,iea:   0,iee:   0,iek:   0
 ae:  58,ee:  39,ke:  10,iea:   0,iee:   0,iek:   0
 ae:  58,ee:  39,ke:  10,iea:   0,iee:   0,iek:   0
-ae:  580000000,ee:  346464.9,ke:  10,iea:   0,iee:   1321321,iek:   2132
+ae:  300,ee:  300,ke:  300,iea:   200,iee:   200,iek:   200
