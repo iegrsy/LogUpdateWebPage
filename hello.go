@@ -11,12 +11,22 @@ import (
 )
 
 const MYFILE = "enerjirep1.txt"
-const HOST = "http://192.168.1.27/test.php"
+const LOCALHOST = "http://192.168.43.12/index.php"
+var HOST string = ""
 
 func main() {
+	args := os.Args[1:]
+	fmt.Println(args)
+	
+	if len(args) > 0 {
+		if args[0] != "" {
+			HOST = args[0]
+		}
+	} else {
+		HOST = LOCALHOST
+	}
 
 	c := time.Tick(3 * time.Second)
-
 	for _ = range c {
 		readLine(MYFILE)
 	}
