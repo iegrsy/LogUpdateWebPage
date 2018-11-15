@@ -11,7 +11,7 @@ import (
 )
 
 const MYFILE = "enerjirep1.txt"
-const LOCALHOST = "http://192.168.43.12/index.php"
+const LOCALHOST = "http://iegrsy.space/fatura/index.php"
 var HOST string = ""
 
 func main() {
