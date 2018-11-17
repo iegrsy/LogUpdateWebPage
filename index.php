@@ -141,7 +141,7 @@
                   <table>
                      <tr>
                         <td class="title">
-                           <img src="http://www.furkanozden.net/wp-content/uploads/2018/08/enerjisa-logo.jpg" style="width:100%; max-width:300px;">                          
+                          <img src="./e-billing.png" style="width:100%; max-width:300px;">   
                         </td>
                         <td>
                            Last Update: <?php echo date("H:i:s d.m.Y") ?><br>
@@ -159,8 +159,7 @@
                            Gazi Üniversitesi<br>
                            Teknoloji Fakültesi<br>
                            06500 Teknikokullar<br>
-                           ANKARA<br>
-                           info@iegrsy.space
+                           ANKARA
                         </td>
                      </tr>
                   </table>
@@ -185,7 +184,7 @@
                ?>
             <tr class="heading">
                <td>
-                  Meter reading information
+                  Meter Reading Information
                </td>
                <td>
                   #
@@ -193,7 +192,7 @@
             </tr>
             <tr class="item">
                <td>
-                  İlk indeks
+                  Last read index
                </td>
                <td>
                   <?php echo $ilk_aktif_index ?>
@@ -201,7 +200,7 @@
             </tr>
             <tr class="item">
                <td>
-                  Son indeks
+                  Current index
                </td>
                <td>
                   <?php echo $son_aktif_index ?>
@@ -209,7 +208,7 @@
             </tr>
             <tr class="item">
                <td>
-                  Kapasitif ilk indeks
+                  Capacitive last read index
                </td>
                <td>
                   <?php echo $ilk_kapasitif_index ?>
@@ -217,7 +216,7 @@
             </tr>
             <tr class="item">
                <td>
-                  Kapasitif son indeks
+                  Capacitive current index
                </td>
                <td>
                   <?php echo $son_kapasitif_index ?>
@@ -225,7 +224,7 @@
             </tr>
             <tr class="item">
                <td>
-                  Endüktif ilk indeks
+                  Inductive last read index
                </td>
                <td>
                   <?php echo $ilk_enduktif_index ?>
@@ -233,7 +232,7 @@
             </tr>
             <tr class="item last">
                <td>
-                  Endüktif son indeks
+                  Inductive current index
                </td>
                <td>
                   <?php echo $son_enduktif_index ?>
@@ -242,7 +241,7 @@
             <tr class="total">
                <td></td>
                <td>
-                  Total: <?php echo $total_kullanim ?> kWh
+                  Total Consumption: <?php echo $total_kullanim ?> kWh
                </td>
             </tr>
             <tr class="heading">
@@ -258,15 +257,15 @@
                   Unit price
                </td>
                <td>
-                  <?php echo $birim_fiyat ?>
+                  <?php echo $birim_fiyat ?> &euro;
                </td>
             </tr>
             <tr class="details">
                <td>
-                  Tüketim bedeli
+                  Consumption cost
                </td>
                <td>
-                  <?php echo $total_tutar ?>
+                  <?php echo $total_tutar ?> &euro;
                </td>
             </tr>
          </table>
